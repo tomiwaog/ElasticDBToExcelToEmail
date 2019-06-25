@@ -24,7 +24,7 @@ async function main(filesToBeSent, fromAddress, toAddress) {
   try {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: "smtphub.glaxo.com",
+      host: "URL",
       port: 25,
       tls: {
         rejectUnauthorized: false
