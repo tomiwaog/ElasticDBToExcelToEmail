@@ -1,0 +1,10 @@
+# ignore a single file retrieved from Elasticsearch
+LocalSampleFile.json
+dummy.json
+
+# ignore updates of Excel
+.xls
+
+
+# ignore Images
+.PNG
