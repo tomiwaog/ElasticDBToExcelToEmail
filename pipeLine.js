@@ -14,7 +14,7 @@ async function pipeLine() {
     if (collectableExcelFiles) {
         console.log(".xlsx Files Are found!: see below:");
         try {
-            await sendEmail(collectableExcelFiles, "tomiwa.x.ogunbamowo@gsk.com", "tomiwa.x.ogunbamowo@gsk.com, jawahar.x.ramis@gsk.com"); //Use the array for email to be sent
+            await sendEmail(collectableExcelFiles, "from@example.com", "ogunbamowo@example.com"); //Use the array for email to be sent
             deleteAllOldFiles(collectableExcelFiles); //Only Runs If sendEmail() succeed without ERROR
         } catch (error) {
             console.log("Email NOT SENT or/and Files are UNDELETED!");

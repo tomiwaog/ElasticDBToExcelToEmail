@@ -21,7 +21,7 @@ function writeToWorkSpaceExcel(row, incolumn, dataBlock, workbookIn) {
     var worksheet = workbook.addWorksheet(dataBlock.workSheetName);
     var sheetRow = row;
 
-    worksheet.cell(1, 2).string("Biotene Chatbot");
+    worksheet.cell(1, 2).string("Chatbot");
     worksheet.cell(1, 3).string("FB-User");
 
     for (var x in dataBlock.datas) {

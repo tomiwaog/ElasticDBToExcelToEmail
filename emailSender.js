@@ -24,13 +24,13 @@ async function main(filesToBeSent, fromAddress, toAddress) {
   try {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: "URL",
+      host: "http://URL",
       port: 25,
       tls: {
         rejectUnauthorized: false
       }
     });
-    var emailSubject = "Biotene Chatbot Conversations - " + new Date();
+    var emailSubject = " Chatbot Conversations - " + new Date();
     // send mail with defined transport object
     let info = await transporter.sendMail({
       from: fromAddress, // sender address

@@ -20,5 +20,5 @@ function automateThis(){
 }
 
 app.listen(5555, ()=>{
-    console.log("Biotene Chatbot is listening on 5555");
+    console.log("Chatbot is listening on 5555");
 })

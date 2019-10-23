@@ -9,19 +9,17 @@ async function fetchlastTimeandAPI(){
 function connectToAPI (lastItemCallTime) {
     console.log("\n******* Entered ConnectApiHTTPS");
     console.log("Last fetched item to be used in the next API call is "+lastItemCallTime)
-    const path = '/biotenedev/document/_search';
+    const path = '/btdev/document/_search';
     
     const query = 'pretty=true&size=10000&q=(date_time:{'+lastItemCallTime+' TO *})&sort=date_time:desc';
-    // https://6aac94487dcf4bb7836b780ad3234a15.logging.gsk.com:9243/biotenedev/document/_search?pretty=true&size=10000&q=(date_time:{1560259944775 TO *})&sort=date_time:desc
 
     var options = {
-        host: '6aac94487dcf4bb7836b780ad3234a15.logging.gsk.com',
+        host: 'host.com',
         port: 9243,
         path: path + '?' + encodeURI(query),
         // authentication headers
         headers: {
-            // 'Authorization': 'Basic ' + new Buffer('biotene_read' + ':' + 'JasREcU8F1').toString('base64')
-            'Authorization': 'Basic ' + Buffer.from('biotene_read' + ':' + 'JasREcU8F1').toString('base64')
+            'Authorization': 'Basic ' + Buffer.from('bt_read' + ':' + 'JasRjEcU8F1').toString('base64')
         }
     };
 
